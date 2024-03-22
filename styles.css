@@ -141,3 +141,30 @@ body{
     max-height: 500px;
     object-fit: cover;
 }
+
+/* CSS for screens smaller than 600px (like smartphones) */
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main_content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn {
+        font-size: 30px; /* Adjust button font size for smaller screens */
+    }
+}
+
+/* CSS for screens between 600px and 1200px (like tablets) */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .btn {
+        font-size: 40px; /* Adjust button font size for medium screens */
+    }
+}
